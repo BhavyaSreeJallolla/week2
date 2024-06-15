@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Footer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Footer Styles */
+        .site-footer {
+            background-color: #333333;
+            color: #ffffff;
+            padding: 20px 0;
+        }
+
+        .site-footer .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .site-footer .footer-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .site-footer .footer-section {
+            flex: 1;
+            margin: 10px;
+        }
+
+        .site-footer .footer-section h4 {
+            margin-bottom: 10px;
+        }
+
+        .site-footer .footer-section p,
+        .site-footer .footer-section a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .site-footer .footer-section a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-bottom {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .site-footer .footer-content {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .site-footer .footer-section {
+                margin: 20px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Main content of the page -->           
+    
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>About Us</h4>
+                    <p>HI,Iam Bhavya Sree Jallolla.<br>Thank you for visiting my page.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <p>Email: bhavya@gmail.com</p>
+                    <p>Phone: 01010101010101</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <p>
+                        <a href="#">Facebook</a> | 
+                        <a href="#">Twitter</a> | 
+                        <a href="#">Instagram</a>
+                    </p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Your Website. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

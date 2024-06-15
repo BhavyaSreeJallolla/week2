@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customized Navigation Bar</title>
+    <style>
+        /* Styling for the navigation bar */
+        #navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: linear-gradient(45deg, #FFD700, #FFA500, #FF6347); /* Gradient background */
+            color: white;
+            padding: 10px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+        }
+
+        /* Ensure the body content does not hide behind the navbar */
+        body {
+            margin-top: 50px; /* Adjust based on navbar height */
+            font-family: Arial, sans-serif; /* Set a fallback font */
+            background-color: #f0f0f0; /* Background color for the body */
+        }
+
+        /* Styling for navbar links */
+        #navbar a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            display: inline-block;
+            transition: background-color 0.3s ease; /* Smooth transition for background color */
+        }
+
+        /* Change link background color on hover */
+        #navbar a:hover {
+            background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation bar -->
+    <div id="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <!-- Main content -->
+    <div style="padding: 20px;">
+        <h1>Welcome to My Website</h1>
+        <p>This is the main content of your homepage.</p>
+    </div>
+</body>
+</html>

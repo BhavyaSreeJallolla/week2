@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Homepage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0; 
+            padding: 0; 
+            background-color: #f0f0f0; /* Light background color */
+        }
+
+        /* Fixed navigation bar styles */
+        #navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #333;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            padding: 10px 20px; 
+            box-sizing: border-box; /*  padding is included in width */
+            color: #fff; /* Text color */
+            display: flex;
+            justify-content: space-around; /* Centers items and adds space between them */
+        }
+
+        /* Style for each section */
+        .section {
+            padding: 40px;
+            color: #333; /* Text color for sections */
+            text-align: center;
+            min-height: 400px; /* Adjust height as needed */
+            box-sizing: border-box;
+        }
+
+        /* Style for the left section */
+        .section-left {
+            background-color: #3498db; /* Blue background */
+            color: #fff; /* Text color for sections */
+        }
+
+        /* Style for the right section */
+        .section-right {
+            background-color: #e74c3c; /* Red background */
+            color: #fff; /* Text color for sections */
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <div id="home" class="section section-left">
+        <h2>Home Section</h2>
+        <p>This is the Home section with a blue background.</p>
+    </div>
+
+    <div id="about" class="section section-right">
+        <h2>About Section</h2>
+        <p>This is the About section with a red background.</p>
+    </div>
+
+    <div id="services" class="section section-left">
+        <h2>Services Section</h2>
+        <p>This is the Services section with a blue background.</p>
+    </div>
+
+    <div id="contact" class="section section-right">
+        <h2>Contact Section</h2>
+        <p>This is the Contact section with a red background.</p>
+    </div>
+</body>
+</html>

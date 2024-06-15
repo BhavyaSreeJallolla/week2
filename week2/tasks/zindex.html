@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dropdown Menu Example</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        margin: 0;
+        padding: 0;
+    }
+
+    .dropdown-container {
+        position: relative;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .dropdown-toggle {
+        padding: 15px 20px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-size: 18px;
+    }
+
+    .dropdown-menu {
+        position: absolute;
+        z-index: 1000;
+        background-color: #ffffff;
+        border: 1px solid #ccc;
+        padding: 20px;
+        display: none;
+        left: 50%;
+        transform: translateX(-50%);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .dropdown-container:hover .dropdown-menu {
+        display: block;
+    }
+
+    .dropdown-menu ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .dropdown-menu ul li {
+        padding: 10px 15px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+    }
+
+    .dropdown-menu ul li:hover {
+        background-color: #8b1919;
+    }
+
+    .dropdown-menu ul li a {
+        text-decoration: none;
+        color: #333;
+    }
+
+    .dropdown-menu ul li a:hover {
+        color: #007bff;
+    }
+    body{
+      background-color:chartreuse;
+    }
+
+</style>
+</head>
+<body>
+
+<div class="dropdown-container">
+    <button class="dropdown-toggle">Dropdown Menu</button>
+    <div class="dropdown-menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+</div>
+
+<p style="text-align: center; margin-top: 50px;">welcome</p>
+
+</body>
+</html>

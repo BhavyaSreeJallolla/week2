@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Two Column Layout with Floats</title>
+<style>
+  
+  body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 20px auto; 
+    overflow: hidden;
+  }
+  .sidebar {
+    float: left; 
+    width: 30%; 
+    background-color: #FF6F61;
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box; 
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+
+  .content {
+    float: right; 
+    width: 70%;
+    background-color: #6B5B95;
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box; 
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+
+  h1, h2, h3 {
+    color: #333;
+    margin-top: 0;
+  }
+
+  @media (max-width: 768px) {
+    .sidebar, .content {
+      float: none; 
+      width: auto; 
+      border-radius: 0; 
+      background-color: blue; 
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="sidebar">
+    <h2>Sidebar</h2>
+    <img src="https://media.istockphoto.com/id/1302477841/photo/peacock-feather-in-holi-colors.jpg?s=612x612&w=0&k=20&c=-K8QpX5tYl4zX2qxrr_livq_TliZ6NMbYnvnJWKH3DE=" alt="Placeholder Image" style="width: 100%; border-radius: 4px;">
+    <p>In essence, Krishna is the symbol for the supreme beauty and bliss of life. He is a symbol for luxury, beauty and happiness.</p>
+  </div>
+
+  <div class="content">
+    <h2>Main Content</h2>
+    <p><b>LORD KRISHNA</b>.</p>
+    <img src="https://cdn.pixabay.com/photo/2024/04/11/09/00/ai-generated-8689518_640.jpg" alt="Placeholder Image" style="width: 100%; border-radius: 4px; margin-top: 20px;">
+    <p>He teaches us to live our yoga; meaning, to stay in union with God. He also tells us to do our dharma: our designated duty in regard to work. We must work hard, but not be attached to the outcome.</p>
+  </div>
+</div>
+
+</body>
+</html>
